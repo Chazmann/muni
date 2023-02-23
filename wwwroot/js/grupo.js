@@ -15,8 +15,26 @@ class GrupoFam extends HTMLElement {
                 <li>
                     <div class="collapsible-header"><i class="material-icons">person</i>Agustina Ampudia (esposa)</div>
                     <div class="collapsible-body">
-                        <h4>Datos de la persona</h4>
-                        <br>
+                    <div class="row">
+                            <div class="input-field col s12">
+                                 <input disabled value="29445995" id="disabled" type="number">
+                                <label for="disabled">Documento</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input disabled value="Esposa" id="disabled" type="text">
+                                <label for="disabled">Tipo de vínculo</label>
+                            </div>
+                            <div class="input-field col s12">
+                                 <input disabled value="11-3532-2253" id="disabled" type="tel">
+                                <label for="disabled">Teléfono de contacto</label>
+                            </div>
+                            <div class="input-field col s12">
+                                 <input disabled value="agus_ampudia@gmail.com" id="disabled" type="email">
+                                <label for="disabled">Correo electrónico</label>
+                            </div>
+
+                        </div>
+                        
                         <!-- BOTONERA SOLICITUDES -->
                         <div class="row">
                             <a class="col s6 centrar btn sani modal-trigger" href="#editdata" ><h6 class="tbtn hidemobile">Editar</h6><i class="material-icons mg10">edit</i></a>
@@ -27,8 +45,26 @@ class GrupoFam extends HTMLElement {
                 <li>
                     <div class="collapsible-header"><i class="material-icons">person</i>Joaquín Gonzalez Ampudia (hijo)</div>
                     <div class="collapsible-body">
-                        <h4>Datos de la persona</h4>
-                        <br>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                 <input disabled value="40445995" id="disabled" type="number">
+                                <label for="disabled">Documento</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input disabled value="Hijo" id="disabled" type="text">
+                                <label for="disabled">Tipo de vínculo</label>
+                            </div>
+                            <div class="input-field col s12">
+                                 <input disabled value="11-2332-2263" id="disabled" type="tel">
+                                <label for="disabled">Teléfono de contacto</label>
+                            </div>
+                            <div class="input-field col s12">
+                                 <input disabled value="joaquingona@gmail.com" id="disabled" type="email">
+                                <label for="disabled">Correo electrónico</label>
+                            </div>
+
+                        </div>
+                        
                         <!-- BOTONERA SOLICITUDES -->
                         <div class="row">
                             <a class="col s6 centrar btn sani modal-trigger" href="#editdata" ><h6 class="tbtn hidemobile">Editar</h6><i class="material-icons mg10">edit</i></a>

@@ -6,13 +6,13 @@ class MisDatos extends HTMLElement {
     <div class="col m4 s12">
         <h5>| Mis Datos </h5>
         <br>
-        <a class="col s12 centrar btn sani2 modal-trigger tooltipped" href="#modidata" data-position="bottom" data-tooltip="Podés editar algunos datos"><h6 class="tbtn hidemobile">Modificar datos</h6><i class="material-icons mg10">edit</i></a>
+        <a class="col s12 centrar btn sani2 modal-trigger tooltipped" href="#modidata" data-position="bottom" data-tooltip="Podés editar algunos datos"><h6 class="tbtn hidemobile">Modificar datos</h6><i class="material-icons mg10">edit</i></a>        <a class="col s12 centrar btn sani2 modal-trigger tooltipped" href="#validar" data-position="bottom" data-tooltip="Cargá tu boleta de ABL"><h6 class="tbtn hidemobile">Agregar ABL</h6><i class="material-icons mg10">upload</i></a>
     </div>
     <div class="col m7 s12">
         <div class="row"><br>
         <div class="row">
             <div class="row mg10">
-                <div class="input-field>
+                <div class="input-field">
                 <input disabled value="Juan Pablo Salleras" id="disabled" type="text" class="validate">
                 <label for="disabled">Nombre y Apellido</label>
                 </div>
@@ -82,6 +82,47 @@ class MisDatos extends HTMLElement {
                     <a href="#!" class="modal-close waves-effect sani btn-flat white-text">Guardar cambios</a>
                 </div>
             </div> 
+            <!-- agregar abl -->
+            <div id="validar" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4>Carga de boleta de ABL para validar residencia</h4>
+                   <div class="divider"></div><br>
+                    <!-- fin titulo -->
+                    <!-- CARGA DE DATOS ABL -->
+                 <div class="row"></div>
+                    <span class="col s12 cv">
+                        <i class="material-icons small">
+                            arrow_right how_to_reg
+                        </i>
+                        <h6 class="mg10">En éste paso deberá proporcionar algunos datos a fin de validar su registro.</h6>
+                    </span>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">description</i>
+                        <input id="npartida" type="tel" class="validate">
+                        <label for="npartida">Número de Partida</label>
+                    </div>
+                    <div class="file-field input-field col s12 m6">
+                        <div class="btn sani">
+                            <span>ABL.</span>
+                            <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Cargue su última factura de ABL">
+                        </div>
+                    </div>
+                
+                </div>
+
+                    <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect btn-flat sani2 white-text">Descartar</a>
+                    <a href="#!" class="modal-close waves-effect sani btn-flat white-text">Cargar</a>
+                </div>
+                </div>
+
+               
+            </div>
+
         </div>
     </div>
 </div>
