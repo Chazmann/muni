@@ -1,0 +1,214 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Tarjeta Ciudadana</title>
+    <!-- <link rel="stylesheet" href="../wwwroot/lib/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<script src="../wwwroot/lib/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script> -->
+    <link rel="stylesheet" href="../wwwroot/lib/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="../wwwroot/lib/materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../wwwroot/css/sitio.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../wwwroot/js/headerlogged.js"></script>
+    <script src="../wwwroot/js/footer.js"></script>
+    <script src="../wwwroot/js/mydata.js"></script>
+    <script src="../wwwroot/js/grupo.js"></script>
+    <script src="../wwwroot/js/solicitud.js"></script>
+    <script src="../wwwroot/js/estadotramite.js"></script>
+
+
+
+</head>
+
+<body>
+<head-log></head-log>
+   
+
+
+<!-------------- ACÁ IMPACTA EL CONTENIDO ---------------------
+    <section class="container mg50">
+        <div class="row">
+        
+            <div class="row">
+                <h4>| Bienvenido Juan.</h4><br>
+                <div class="divider"></div><br>
+                <span class="col s12 cv">
+                    <i class="material-icons">
+                        info
+                    </i> <i class="mg10"></i>Realizá todas tus gestiones dentro de un mismo portal.</span>
+            </div>
+        </div>
+    !----------------- SECCIÓN TABS ----------------->
+  
+    <div class="container">
+        <div class="col s12">
+            <ul class="tabs tabs-fixed-width sani-text">
+                <li class="tab col s4"><a href="#tarjeta" class="active sani-text cv w100"><i class="material-icons">payments</i><span class="mg10"></span>Tarjetas</a></li>
+                <li class="tab col s4"><a  href="#grupo" class="sani-text cv w100"><i class="material-icons">groups</i><span class="mg10"></span>Grupo Familiar</a></li>
+                <li class="tab col s4"><a class="sani-text cv w100" href="#misdatos"><i class="material-icons">contact_mail</i><span class="mg10"></span>Mis Datos</a></li>
+            </ul>
+        </div>
+        <div id="misdatos" class="col s12"><mis-datos></mis-datos></div>
+        <div id="grupo" class="col s12"><grupo-fami></grupo-fami></div>
+        <div id="tarjeta" class="col s12">
+            <ul class="tabs subtab sani-text tabs-fixed-width">
+                <li class="tab col s4"><a class="active sani-text tab-sm" href="#mistarj">Tarjetas</a></li>
+                <li class="tab col s4"><a  href="#solicitar" class="sani-text tab-sm">Solicitar</a></li>
+                <li class="tab col s4"><a href="#estado" class="sani-text tab-sm">Estado de trámites</a></li>
+            </ul>
+<!-- SECCIONES  ---------TARJETAS -->
+            <div id="mistarj" class="col s12">
+                <div class="row">
+                <div class="col m4 s12">
+                    <h5>| Mis tarjetas </h5>
+                </div>
+                <div class="col m7 s12">
+                    <div class="row">
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">badge</i>Juan Pablo Salleras (titular)</div>
+                                <div class="collapsible-body">
+                                    <div class="cardtemp materialboxed">
+                                        <div class="row pr">
+                                            <div class="col s7">
+                                                <div class="row"></div>
+                                                <div class="user"><h5>Juan Pablo Salleras</h5></div>
+                                                <div class="lg"><span>Nº </span>1144-3355-00</div>
+                                                <div class="expdate"><span>Vencimiento:</span>10/26</div>
+                                            </div>
+                                            <div class="col s5 logobar">
+                                                <div class="col s12"><img src="../wwwroot/images/barcode_tarjeta.png" alt="" srcset="" class="responsive-img"></div>
+                                                <div class="col s12"><img src="../wwwroot/images/side_si_tarjeta.png" alt="" srcset="" class="responsive-img"></div>
+                                           </div>
+                                        </div>
+                                        <div class="col s12 barra sanifoot">
+                                                <img src="../wwwroot/images/btm_tarjeta.png" alt="" class="responsive-img">
+                                                
+                                        </div>
+                                    </div><br>
+                                    <!-- BOTONERA SOLICITUDES -->
+                                    <div class="row">
+                                        <a class="col s4 centrar btn sani modal-trigger" href="#reno1" ><h6 class="tbtn hidemobile">Renovar</h6><i class="material-icons mg10">autorenew</i></a>
+                                        <a class="col s4 centrar btn sani2 modal-trigger" href="#repo1" ><h6 class="tbtn hidemobile">Reposición</h6><i class="material-icons mg10">restore</i></a>
+                                        <a class="col s4 centrar btn sani2 modal-trigger" href="#baja1" ><h6 class="tbtn hidemobile">Dar de Baja</h6><i class="material-icons mg10">cancel</i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">groups</i>Leandro Chazarreta</div>
+                                <div class="collapsible-body">
+                                    <div class="cardtemp materialboxed">
+                                        <div class="row pr">
+                                            <div class="col s7">
+                                                <div class="row"></div>
+                                                <div class="user"><h5>Leandro Chazarreta</h5></div>
+                                                <div class="lg"><span>Nº </span>1158-3355-02</div>
+                                                <div class="expdate"><span>Vencimiento:</span>10/26</div>
+                                            </div>
+                                            <div class="col s5 logobar">
+                                                <div class="col s12"><img src="../wwwroot/images/barcode_tarjeta.png" alt="" srcset="" class="responsive-img"></div>
+                                                <div class="col s12"><img src="../wwwroot/images/side_si_tarjeta.png" alt="" srcset="" class="responsive-img"></div>
+                                           </div>
+                                        </div>
+                                        <div class="col s12 barra sanifoot">
+                                                <img src="../wwwroot/images/btm_tarjeta.png" alt="" class="responsive-img">
+                                                
+                                        </div>
+                                    </div><br>
+                                    <!-- BOTONERA SOLICITUDES -->
+                                    <div class="row">
+                                        <a class="col s4 centrar btn sani modal-trigger" href="#reno1" ><h6 class="tbtn hidemobile">Renovar</h6><i class="material-icons mg10">autorenew</i></a>
+                                        <a class="col s4 centrar btn sani2 modal-trigger" href="#repo1" ><h6 class="tbtn hidemobile">Reposición</h6><i class="material-icons mg10">restore</i></a>
+                                        <a class="col s4 centrar btn sani2 modal-trigger" href="#baja1" ><h6 class="tbtn hidemobile">Dar de Baja</h6><i class="material-icons mg10">cancel</i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">groups</i>Diego Landa</div>
+                                <div class="collapsible-body"> <div class="card">
+                                    <img src="../wwwroot/images/tarjeta.png" alt="" srcset="" class=" responsive-img">
+                                </div></div>
+                            </li>
+                            </ul>
+                       
+                    </div>
+                </div>
+            </div>
+            </div>
+<!-- SECCIONES  ---------SOLICITUDES -->
+            <div id="solicitar" class="col s12"><soli-citud></soli-citud></div>
+<!-- SECCIONES  ---------ESTADO DE TRAMITES -->
+            <div id="estado" class="col s12 grey">Estado de solicitudes</div>
+
+
+<!------------ MODAL PARA SOLICITUDES --------------------------------------->
+            <!-- RENOVACIONES ----------->
+            <div id="reno1" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4>Solicitud de Renovación</h4>
+                    <p>Info de la renovación o tipo de solicitud</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect sani2 white-text btn-flat">Cancelar</a>
+                    <a href="#!" class="modal-close waves-effect sani white-text btn-flat">Confirmar</a>
+                </div>
+            </div>
+            <!-- REPOSICIONES ----------->
+            <div id="repo1" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4>Solicitud de Reposición</h4>
+                    <p>Info de la renovación o tipo de solicitud</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect sani2 white-text btn-flat">Cancelar</a>
+                    <a href="#!" class="modal-close waves-effect sani white-text btn-flat">Confirmar</a>
+                </div>
+            </div>
+            <!-- BAJA DE TARJETA ----------->
+            <div id="baja1" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4>Dar de baja tarjeta</h4>
+                    <p>Info de la renovación o tipo de solicitud</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect sani2 white-text btn-flat">Cancelar</a>
+                    <a href="#!" class="modal-close waves-effect sani white-text btn-flat">Confirmar</a>
+                </div>
+            </div>
+<!------------ FIN ÁREA MODAL PARA SOLICITUDES --------------------------------------->
+
+            
+        </div>
+      
+    </div>
+       
+        
+            
+    </div>
+
+     
+
+    
+    
+    </section>
+    
+<!-------------- FIN DEL CONTENIDO --------------------->
+    <foo-ter></foo-ter>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.js"></script>
+    <script src="../wwwroot/lib/materialize/js/materialize.min.js"></script>
+    <script src="../wwwroot/lib/jquery/dist/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../wwwroot/js/actions.js"></script>
+</body>
+
+</html>

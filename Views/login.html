@@ -1,0 +1,179 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio sesión - @ViewData["Title"] - Tarjeta Ciudadana</title>
+    <!-- <link rel="stylesheet" href="../wwwroot/lib/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<script src="../wwwroot/lib/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script> -->
+    <link rel="stylesheet" href="../wwwroot/lib/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="../wwwroot/lib/materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../wwwroot/css/sitio.css">
+
+</head>
+
+<body>
+
+    <header class="nav-wrapper sani ">
+        <div class="container">
+            <nav class="transparent row s12 cv left-align  bxn">
+                <div class="col s6 m4 l4 pull-l2 offset-l2">
+                    <a href="#" class="">
+                        <img src="../wwwroot/images/logo.png" alt="" srcset="" class="responsive-img">
+                    </a>
+                </div>
+                <div class="col s4 offset-s1 m4 offset-m3 l4 offset-l2 right-align">
+                    <span class="hide">Hola @USUARIO</span>
+                </div>
+                <div class="col s1">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <ul id="slide-out hide" class="sidenav">
+            <li>
+                <div class="user-view indigo left-align">
+                    <a href="#user"><img class="circle" src="../wwwroot/images/def_avatar.jpg"></a>
+                    <a href="#name"><span class="white-text name">Juan Pablo Salleras</span></a>
+                    <a href="#email"><span class="white-text email">jpsalleras@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="#!"><i class="material-icons">person_pin</i>Mis Datos</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a href="#!"><i class="material-icons">groups</i>Grupo Familiar</a></li>
+            <li><a href="#!"><i class="material-icons">badge</i>Tarjetas</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">logout</i>Cerrar sesión</a></li>
+        </ul>
+
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view sani left-align">
+                    <a href="#user"><img class="circle" src="../wwwroot/images/logo_login.png"></a>
+                    <span class="white-text name">TARJETA CIUDADANA</span>
+                    <div class="row"><br></div>
+                </div>
+                <div class="row"></div>
+            </li>
+            <li><a href="register.html"><i class="material-icons">how_to_reg</i>Registrarse</a></li>
+            <li><a class="waves-effect" href="login.html"><i class="material-icons">login</i>Iniciar sesión</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a href="https://www.sanisidro.gob.ar/" target="_blank"><i class="material-icons">maps_home_work</i>El Municipio</a></li>
+            <li><a href="#!"><i class="material-icons">info</i>Servicios</a></li>
+
+
+        </ul>
+    </header>
+
+
+    <!-------------- ACÁ IMPACTA EL CONTENIDO --------------------->
+    <section class="container mg50">
+        <div class="row">   
+            <div class="col s12 m6">
+                <div class="row hidemobile">
+                <img src="../wwwroot/images/logo_login.png" alt="" srcset="" class="col m6 s4 offset-4">
+                </div>
+                 <div class="row">
+                <h3 class="col s12">TARJETA CIUDADANA</h3>
+                </div>
+                <div class="row">
+                    <h4>| Inicio de sesión</h4>
+                                       <span class="col s12 cv">
+                        <i class="material-icons">
+                            info
+                        </i><span class="mg10">Ingrese su usuario y contraseña para sus gestiones.</span><div class="divider"></div><br></span>
+                    </div>
+            </div>
+        
+            <div class="col s12 m6">
+                
+                <form class="col s12 ">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">pin</i>
+                        <input id="dni1" type="tel" class="valdidate">
+                        <label for="dni1">Número de documento</label>
+                    </div>
+            
+                    <div class="input-field col s12">
+                        <select class="icons" required>
+                            <option value="" disabled selected>Elija su opción</option>
+                            <option value="F" data-icon="../wwwroot/images/female.png">Femenino</option>
+                            <option value="M" data-icon="../wwwroot/images/male.png">Masculino</option>
+                        </select>
+                        <label>Seleccione su sexo:</label>
+                    </div>
+                        
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">key</i>
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Ingrese una contraseña</label>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <p>
+                        <label class="col s12">
+                            <input type="checkbox" />
+                            <span>Mantener sesión iniciada. </span>
+                        </label>
+                    </p>
+                </div>
+                <div class="row"></div>
+                <a href="logged_v2copy.html" class="white-text col s12 btn sani">
+                Iniciar sesión 
+                    <i class="material-icons right">login</i>
+               </a>
+            
+            
+                <div class="row"></div>
+                <div class="divider"></div>
+                <div class="row centrar"><br><br><i class="material-icons">
+                        how_to_reg
+                    </i> Si aún no tenés usuario, para ingresar deberás registrarte</span></div>
+                <a href="register.html" class="btn white-text col s12 btn waves-effect waves-light grey">Registrarse
+                    <i class="material-icons right">how_to_reg</i></a>
+                
+               
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------- FIN DEL CONTENIDO --------------------->
+    <footer class="page-footer sani fix_bottom">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="col s10">&copy; @DateTime.Now.Year - Municipalidad de San Isidro. Todos los derechos
+                    reservados</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../wwwroot/lib/materialize/js/materialize.min.js"></script>
+    <script src="../wwwroot/lib/jquery/dist/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../wwwroot/js/actions.js"></script>
+    
+</body>
+
+</html>
