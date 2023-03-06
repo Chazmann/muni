@@ -12,7 +12,7 @@ class HeaderLogged extends HTMLElement {
         </div>
         <div class="col s5 m4 offset-m3 l4 offset-l2 right-align">
             <!-- MOSTRAR USUARIO SI SESIÓN INICIADA -->
-            <span class="sm-txt">Hola @USUARIO</span>
+            <span class="sm-txt hidemobile">Hola @USUARIO</span>
             <span class="mg10"><a class="waves-effect" href="login.html"><i class="sm material-icons">logout</i></a></span>
             
         </div>
